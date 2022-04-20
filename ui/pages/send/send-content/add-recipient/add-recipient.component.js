@@ -9,9 +9,15 @@ import { ellipsify } from '../../send.utils';
 import Button from '../../../../components/ui/button';
 import IconCaretLeft from '../../../../components/ui/icon/icon-caret-left';
 import Confusable from '../../../../components/ui/confusable';
+import { isSmartContractAddress } from '../../../../helpers/utils/transactions.util';
+import {
+  CONTRACT_ACCOUNTS,
+  EXTERNALLY_OWNED_ACCOUNTS,
+} from '../../../../../shared/constants/app';
 
 export default class AddRecipient extends Component {
   static propTypes = {
+    addToAddressBook: PropTypes.func,
     userInput: PropTypes.string,
     ownedAccounts: PropTypes.array,
     addressBook: PropTypes.array,
@@ -29,6 +35,7 @@ export default class AddRecipient extends Component {
     recipient: PropTypes.shape({
       address: PropTypes.string,
       nickname: PropTypes.nickname,
+      memo: PropTypes.string,
       error: PropTypes.string,
       warning: PropTypes.string,
     }),
@@ -65,11 +72,15 @@ export default class AddRecipient extends Component {
     metricsEvent: PropTypes.func,
   };
 
-  selectRecipient = (address, nickname = '', type = 'user input') => {
+  selectRecipient = async (address, nickname = '', type = 'user input') => {
     this.props.addHistoryEntry(
       `sendFlow - User clicked recipient from ${type}. address: ${address}, nickname ${nickname}`,
     );
     this.props.updateRecipient({ address, nickname });
+    const addressType = (await isSmartContractAddress(address))
+      ? CONTRACT_ACCOUNTS
+      : EXTERNALLY_OWNED_ACCOUNTS;
+    await this.props.addToAddressBook(address, nickname, type, addressType);
   };
 
   searchForContacts = () => {
