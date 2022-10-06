@@ -454,8 +454,7 @@
       "web3>web3-bzz": false,
       "web3>web3-core>web3-core-requestmanager>web3-providers-ws>websocket>bufferutil": false,
       "web3>web3-core>web3-core-requestmanager>web3-providers-ws>websocket>es5-ext": false,
-      "web3>web3-core>web3-core-requestmanager>web3-providers-ws>websocket>utf-8-validate": false,
-      "3box>ipfs>ipfs-bitswap>protobufjs": false
+      "web3>web3-core>web3-core-requestmanager>web3-providers-ws>websocket>utf-8-validate": false
     }
   }
 }
