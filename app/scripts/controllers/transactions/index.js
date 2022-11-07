@@ -150,6 +150,7 @@ export default class TransactionController extends EventEmitter {
     this.getDeviceModel = opts.getDeviceModel;
     this.getAccountType = opts.getAccountType;
     this.getTokenStandardAndDetails = opts.getTokenStandardAndDetails;
+    this.securityProviderRequest = opts.securityProviderRequest;
 
     this.memStore = new ObservableStore({});
 
@@ -338,6 +339,7 @@ export default class TransactionController extends EventEmitter {
     const initialTxMeta = await this.addUnapprovedTransaction(
       txParams,
       opts.origin,
+      opts.method,
     );
 
     // listen for tx completion (success, fail)
@@ -772,6 +774,7 @@ export default class TransactionController extends EventEmitter {
   async addUnapprovedTransaction(
     txParams,
     origin,
+    method,
     transactionType,
     sendFlowHistory = [],
     actionId,
@@ -853,6 +856,12 @@ export default class TransactionController extends EventEmitter {
     this.emit('newUnapprovedTx', txMeta);
 
     txMeta = await this.addTransactionGasDefaults(txMeta);
+
+    const dataValidation = await this.securityProviderRequest(txMeta, method);
+
+    txMeta.dataValidation = dataValidation;
+
+    console.log('txMeta: ', txMeta);
 
     return txMeta;
   }
