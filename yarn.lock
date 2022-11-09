@@ -2909,10 +2909,6 @@
     web3 "^0.20.7"
     web3-provider-engine "^16.0.3"
 
-"@metamask/controllers@link:../controllers":
-  version "0.0.0"
-  uid ""
-
 "@metamask/design-tokens@^1.6.0", "@metamask/design-tokens@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@metamask/design-tokens/-/design-tokens-1.9.0.tgz#2b173c671f36b0d3faa2e31ea4bf66e811a7ff49"
