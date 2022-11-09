@@ -45,6 +45,7 @@ import {
   RateLimitController,
   NotificationController,
   ///: END:ONLY_INCLUDE_IN
+  SubjectType,
 } from '@metamask/controllers';
 import SmartTransactionsController from '@metamask/smart-transactions-controller';
 ///: BEGIN:ONLY_INCLUDE_IN(flask)
@@ -90,7 +91,6 @@ import {
   MESSAGE_TYPE,
   ///: END:ONLY_INCLUDE_IN
   POLLING_TOKEN_ENVIRONMENT_TYPES,
-  SUBJECT_TYPES,
 } from '../../shared/constants/app';
 import { EVENT, EVENT_NAMES } from '../../shared/constants/metametrics';
 
@@ -1296,7 +1296,7 @@ export default class MetamaskController extends EventEmitter {
           version,
         } = snap;
         this.subjectMetadataController.addSubjectMetadata({
-          subjectType: SUBJECT_TYPES.SNAP,
+          subjectType: SubjectType.Snap,
           name: proposedName,
           origin: snap.id,
           version,
@@ -3340,9 +3340,9 @@ export default class MetamaskController extends EventEmitter {
     if (subjectType) {
       _subjectType = subjectType;
     } else if (sender.id && sender.id !== this.extension.runtime.id) {
-      _subjectType = SUBJECT_TYPES.EXTENSION;
+      _subjectType = SubjectType.Extension;
     } else {
-      _subjectType = SUBJECT_TYPES.WEBSITE;
+      _subjectType = SubjectType.Website;
     }
 
     if (sender.url) {
@@ -3397,7 +3397,7 @@ export default class MetamaskController extends EventEmitter {
     this.setupProviderConnection(
       mux.createStream('provider'),
       sender,
-      SUBJECT_TYPES.INTERNAL,
+      SubjectType.Internal,
     );
   }
 
@@ -3496,15 +3496,15 @@ export default class MetamaskController extends EventEmitter {
    *
    * @param {*} outStream - The stream to provide over.
    * @param {MessageSender | SnapSender} sender - The sender of the messages on this stream
-   * @param {string} subjectType - The type of the sender, i.e. subject.
+   * @param {SubjectType} subjectType - The type of the sender, i.e. subject.
    */
   setupProviderConnection(outStream, sender, subjectType) {
     let origin;
-    if (subjectType === SUBJECT_TYPES.INTERNAL) {
+    if (subjectType === SubjectType.Internal) {
       origin = ORIGIN_METAMASK;
     }
     ///: BEGIN:ONLY_INCLUDE_IN(flask)
-    else if (subjectType === SUBJECT_TYPES.SNAP) {
+    else if (subjectType === SubjectType.Snap) {
       origin = sender.snapId;
     }
     ///: END:ONLY_INCLUDE_IN
@@ -3516,7 +3516,7 @@ export default class MetamaskController extends EventEmitter {
       this.subjectMetadataController.addSubjectMetadata({
         origin,
         extensionId: sender.id,
-        subjectType: SUBJECT_TYPES.EXTENSION,
+        subjectType: SubjectType.Extension,
       });
     }
 
@@ -3562,7 +3562,7 @@ export default class MetamaskController extends EventEmitter {
     this.setupUntrustedCommunication({
       connectionStream,
       sender: { snapId },
-      subjectType: SUBJECT_TYPES.SNAP,
+      subjectType: SubjectType.Snap,
     });
   }
   ///: END:ONLY_INCLUDE_IN
@@ -3617,7 +3617,7 @@ export default class MetamaskController extends EventEmitter {
     );
 
     // onboarding
-    if (subjectType === SUBJECT_TYPES.WEBSITE) {
+    if (subjectType === SubjectType.Website) {
       engine.push(
         createOnboardingMiddleware({
           location: sender.url,
@@ -3725,7 +3725,7 @@ export default class MetamaskController extends EventEmitter {
 
     ///: BEGIN:ONLY_INCLUDE_IN(flask)
     engine.push(
-      createSnapMethodMiddleware(subjectType === SUBJECT_TYPES.SNAP, {
+      createSnapMethodMiddleware(subjectType === SubjectType.Snap, {
         getAppKey: this.getAppKeyForSubject.bind(this, origin),
         getUnlockPromise: this.appStateController.getUnlockPromise.bind(
           this.appStateController,
@@ -3761,7 +3761,7 @@ export default class MetamaskController extends EventEmitter {
     // filter and subscription polyfills
     engine.push(filterMiddleware);
     engine.push(subscriptionManager.middleware);
-    if (subjectType !== SUBJECT_TYPES.INTERNAL) {
+    if (subjectType !== SubjectType.Internal) {
       // permissions
       engine.push(
         this.permissionController.createPermissionMiddleware({
