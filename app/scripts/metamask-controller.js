@@ -4549,7 +4549,7 @@ export default class MetamaskController extends EventEmitter {
       }
     }
   };
-  
+
   async securityProviderRequest(requestData, methodName) {
     // const isTransactionSecurityCheckEnabled =
     //   this.preferencesController.store.getState().transactionSecurityCheckEnabled;
