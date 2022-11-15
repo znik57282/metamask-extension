@@ -3289,7 +3289,7 @@ export function getContractMethodData(data = '') {
     dispatch(loadingMethodDataStarted());
     log.debug(`loadingMethodData`);
 
-    const { name, params } = getMethodDataAsync(fourBytePrefix);
+    const { name, params } = await getMethodDataAsync(fourBytePrefix);
 
     dispatch(loadingMethodDataFinished());
     callBackgroundMethod(
