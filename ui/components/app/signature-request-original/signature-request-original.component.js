@@ -345,7 +345,6 @@ export default class SignatureRequestOriginal extends Component {
     const { messagesCount } = this.props;
     const { t } = this.context;
     const rejectNText = t('rejectTxsN', [messagesCount]);
-
     return (
       <div className="request-signature__container">
         {this.renderHeader()}
