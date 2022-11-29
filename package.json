@@ -79,7 +79,8 @@
     "ts-migration:enumerate": "ts-node development/ts-migration-dashboard/scripts/write-list-of-files-to-convert.ts",
     "ts-migration:dashboard:watch": "ts-node development/ts-migration-dashboard/scripts/build.ts --watch",
     "ts-migration:dashboard:build": "ts-node development/ts-migration-dashboard/scripts/build.ts",
-    "ts-migration:dashboard:deploy": "gh-pages --dist development/ts-migration-dashboard/build --remote ts-migration-dashboard"
+    "ts-migration:dashboard:deploy": "gh-pages --dist development/ts-migration-dashboard/build --remote ts-migration-dashboard",
+    "test-storybook": "test-storybook -c .storybook"
   },
   "resolutions": {
     "analytics-node/axios": "^0.21.2",
