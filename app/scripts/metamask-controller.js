@@ -585,8 +585,9 @@ export default class MetamaskController extends EventEmitter {
       await opts.openPopup();
     });
 
-    let additionalKeyrings = [];
-    if (!isManifestV3) {
+    let additionalKeyrings = [QRHardwareKeyring];
+
+    if (this.canUseHardwareWallets()) {
       additionalKeyrings = [
         TrezorKeyring,
         LedgerBridgeKeyring,
@@ -594,12 +595,14 @@ export default class MetamaskController extends EventEmitter {
         QRHardwareKeyring,
       ];
     }
+
     this.keyringController = new KeyringController({
       keyringTypes: additionalKeyrings,
       initState: initState.KeyringController,
       encryptor: opts.encryptor || undefined,
       cacheEncryptionKey: isManifestV3,
     });
+
     this.keyringController.memStore.subscribe((state) =>
       this._onKeyringControllerUpdate(state),
     );
@@ -1185,6 +1188,10 @@ export default class MetamaskController extends EventEmitter {
     this.extension.runtime.onMessageExternal.addListener(onMessageReceived);
     // Fire a ping message to check if other extensions are running
     checkForMultipleVersionsRunning();
+  }
+
+  canUseHardwareWallets() {
+    return !isManifestV3 || process.env.CONF?.HARDWARE_WALLETS_MV3;
   }
 
   resetStates(resetMethods) {
@@ -2504,6 +2511,9 @@ export default class MetamaskController extends EventEmitter {
 
   async getKeyringForDevice(deviceName, hdPath = null) {
     let keyringName = null;
+    if (deviceName !== DEVICE_NAMES.QR && !this.canUseHardwareWallets()) {
+      throw new Error('Hardware wallets are not supported on this version.');
+    }
     switch (deviceName) {
       case DEVICE_NAMES.TREZOR:
         keyringName = TrezorKeyring.type;
