@@ -1717,6 +1717,7 @@ describe('Transaction Controller', function () {
             token_standard: TOKEN_STANDARDS.NONE,
             device_model: 'N/A',
             transaction_speed_up: false,
+            ui_customizations: [],
           },
           sensitiveProperties: {
             default_gas: '0.000031501',
@@ -1803,6 +1804,7 @@ describe('Transaction Controller', function () {
             token_standard: TOKEN_STANDARDS.NONE,
             device_model: 'N/A',
             transaction_speed_up: false,
+            ui_customizations: [],
           },
           sensitiveProperties: {
             default_gas: '0.000031501',
@@ -1898,6 +1900,7 @@ describe('Transaction Controller', function () {
             token_standard: TOKEN_STANDARDS.NONE,
             device_model: 'N/A',
             transaction_speed_up: false,
+            ui_customizations: [],
           },
           sensitiveProperties: {
             default_gas: '0.000031501',
@@ -1986,6 +1989,7 @@ describe('Transaction Controller', function () {
             token_standard: TOKEN_STANDARDS.NONE,
             device_model: 'N/A',
             transaction_speed_up: false,
+            ui_customizations: [],
           },
           sensitiveProperties: {
             default_gas: '0.000031501',
@@ -2073,6 +2077,7 @@ describe('Transaction Controller', function () {
           token_standard: TOKEN_STANDARDS.NONE,
           device_model: 'N/A',
           transaction_speed_up: false,
+          ui_customizations: [],
         },
         sensitiveProperties: {
           gas_price: '2',
@@ -2141,6 +2146,7 @@ describe('Transaction Controller', function () {
           token_standard: TOKEN_STANDARDS.NONE,
           device_model: 'N/A',
           transaction_speed_up: false,
+          ui_customizations: [],
         },
         sensitiveProperties: {
           baz: 3.0,
@@ -2219,6 +2225,7 @@ describe('Transaction Controller', function () {
           token_standard: TOKEN_STANDARDS.NONE,
           device_model: 'N/A',
           transaction_speed_up: false,
+          ui_customizations: [],
         },
         sensitiveProperties: {
           baz: 3.0,
