@@ -19,7 +19,7 @@ class EditableLabel extends Component {
     value: this.props.defaultValue || '',
   };
 
-  async handleSubmit() {
+  handleSubmit() {
     const { value } = this.state;
     const { accountsNames } = this.props;
 
@@ -27,8 +27,9 @@ class EditableLabel extends Component {
       return;
     }
 
-    await this.props.onSubmit(value);
-    this.setState({ isEditing: false });
+    Promise.resolve(this.props.onSubmit(value)).then(() =>
+      this.setState({ isEditing: false }),
+    );
   }
 
   renderEditing() {
