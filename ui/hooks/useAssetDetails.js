@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getCollectibles } from '../ducks/metamask/metamask';
+import { getNfts } from '../ducks/metamask/metamask';
 import { getAssetDetails } from '../helpers/utils/token-util';
 import { hideLoadingIndication, showLoadingIndication } from '../store/actions';
 import { usePrevious } from './usePrevious';
@@ -8,7 +8,7 @@ import { usePrevious } from './usePrevious';
 export function useAssetDetails(tokenAddress, userAddress, transactionData) {
   const dispatch = useDispatch();
   // state selectors
-  const collectibles = useSelector(getCollectibles);
+  const nfts = useSelector(getNfts);
 
   // in-hook state
   const [currentAsset, setCurrentAsset] = useState(null);
@@ -25,7 +25,7 @@ export function useAssetDetails(tokenAddress, userAddress, transactionData) {
         tokenAddress,
         userAddress,
         transactionData,
-        collectibles,
+        nfts,
       );
       setCurrentAsset(assetDetails);
       dispatch(hideLoadingIndication());
@@ -45,7 +45,7 @@ export function useAssetDetails(tokenAddress, userAddress, transactionData) {
     tokenAddress,
     userAddress,
     transactionData,
-    collectibles,
+    nfts,
   ]);
 
   if (currentAsset) {

@@ -754,7 +754,7 @@ export default class MetaMetricsController {
   }
 
   /**
-   * Returns an array of all of the collectibles/NFTs the user
+   * Returns an array of all of the nfts/NFTs the user
    * possesses across all networks and accounts.
    *
    * @param {object} allNfts
@@ -767,7 +767,7 @@ export default class MetaMetricsController {
   });
 
   /**
-   * Returns the number of unique collectible/NFT addresses the user
+   * Returns the number of unique nft/NFT addresses the user
    * possesses across all networks and accounts.
    *
    * @param {object} allNfts

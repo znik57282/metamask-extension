@@ -45,7 +45,7 @@ export default class ExperimentalTab extends PureComponent {
     handleSettingsRefs(t, t('experimental'), this.settingsRefs);
   }
 
-  renderCollectibleDetectionToggle() {
+  renderNftDetectionToggle() {
     if (!process.env.NFTS_V1) {
       return null;
     }
@@ -64,9 +64,9 @@ export default class ExperimentalTab extends PureComponent {
         className="settings-page__content-row--dependent"
       >
         <div className="settings-page__content-item">
-          <span>{t('useCollectibleDetection')}</span>
+          <span>{t('useNftDetection')}</span>
           <div className="settings-page__content-description">
-            {t('useCollectibleDetectionDescription')}
+            {t('useNftDetectionDescription')}
           </div>
         </div>
         <div className="settings-page__content-item">
@@ -76,9 +76,9 @@ export default class ExperimentalTab extends PureComponent {
               onToggle={(value) => {
                 this.context.trackEvent({
                   category: EVENT.CATEGORIES.SETTINGS,
-                  event: 'Collectible Detection',
+                  event: 'Nft Detection',
                   properties: {
-                    action: 'Collectible Detection',
+                    action: 'Nft Detection',
                     legacy_event: true,
                   },
                 });
@@ -231,7 +231,7 @@ export default class ExperimentalTab extends PureComponent {
           this.renderTransactionSecurityCheckToggle()}
         {this.renderImprovedTokenAllowanceToggle()}
         {this.renderOpenSeaEnabledToggle()}
-        {this.renderCollectibleDetectionToggle()}
+        {this.renderNftDetectionToggle()}
       </div>
     );
   }
