@@ -4566,7 +4566,7 @@ export default class MetamaskController extends EventEmitter {
           chainId,
           currentLocale,
         );
-        return await flagAsDangerous;
+        return flagAsDangerous;
       } catch (err) {
         log.error(err.message);
         throw err;
