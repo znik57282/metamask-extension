@@ -4588,9 +4588,6 @@
   "yourNFTmayBeAtRisk": {
     "message": "Your NFT may be at risk"
   },
-  "yourPrivateSeedPhrase": {
-    "message": "Your private Secret Recovery Phrase"
-  },
   "yourSecretSeedPhrase": {
     "message": "Your Secret Recovery Phrase"
   },
