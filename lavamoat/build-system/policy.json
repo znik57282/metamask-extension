@@ -1026,6 +1026,13 @@
         "@metamask/jazzicon>color>color-convert>color-name": true
       }
     },
+    "@sentry/cli>mkdirp": {
+      "builtin": {
+        "fs": true,
+        "path.dirname": true,
+        "path.resolve": true
+      }
+    },
     "@storybook/api>telejson>is-symbol": {
       "packages": {
         "string.prototype.matchall>has-symbols": true
@@ -6382,20 +6389,27 @@
         "define": true
       }
     },
-    "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": {
+    "react-markdown>remark-parse": {
       "packages": {
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>character-entities": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>character-entities-legacy": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>character-reference-invalid": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>is-alphanumerical": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>is-hexadecimal": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-decimal": true
+        "react-markdown>remark-parse>mdast-util-from-markdown": true
       }
     },
-    "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>is-alphanumerical": {
+    "react-markdown>remark-parse>mdast-util-from-markdown": {
       "packages": {
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-alphabetical": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-decimal": true
+        "react-markdown>remark-parse>mdast-util-from-markdown>mdast-util-to-string": true,
+        "react-markdown>remark-parse>mdast-util-from-markdown>micromark": true,
+        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": true,
+        "react-markdown>vfile>unist-util-stringify-position": true
+      }
+    },
+    "react-markdown>remark-parse>mdast-util-from-markdown>micromark": {
+      "packages": {
+        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": true
+      }
+    },
+    "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": {
+      "packages": {
+        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>character-entities": true
       }
     },
     "react-markdown>unified": {
@@ -6408,31 +6422,16 @@
         "react-markdown>vfile": true
       }
     },
-    "react-markdown>unist-util-visit": {
-      "packages": {
-        "react-markdown>unist-util-visit>unist-util-visit-parents": true
-      }
-    },
-    "react-markdown>unist-util-visit>unist-util-visit-parents": {
-      "packages": {
-        "react-markdown>unist-util-visit>unist-util-is": true
-      }
-    },
     "react-markdown>vfile": {
       "builtin": {
-        "path.basename": true,
-        "path.dirname": true,
-        "path.extname": true,
-        "path.join": true,
-        "path.sep": true
+        "path": true
       },
       "globals": {
-        "process.cwd": true
+        "process": true
       },
       "packages": {
         "react-markdown>vfile>is-buffer": true,
-        "react-markdown>vfile>vfile-message": true,
-        "vinyl>replace-ext": true
+        "react-markdown>vfile>vfile-message": true
       }
     },
     "react-markdown>vfile>vfile-message": {
@@ -6794,76 +6793,23 @@
     },
     "stylelint>@stylelint/postcss-markdown>remark": {
       "packages": {
+        "react-markdown>remark-parse": true,
         "react-markdown>unified": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse": true,
         "stylelint>@stylelint/postcss-markdown>remark>remark-stringify": true
-      }
-    },
-    "stylelint>@stylelint/postcss-markdown>remark>remark-parse": {
-      "packages": {
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>ccount": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>collapse-white-space": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-alphabetical": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-decimal": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-whitespace-character": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-word-character": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>markdown-escapes": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>repeat-string": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>state-toggle": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>trim": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>trim-trailing-lines": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>unherit": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>unist-util-remove-position": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>vfile-location": true,
-        "watchify>xtend": true
-      }
-    },
-    "stylelint>@stylelint/postcss-markdown>remark>remark-parse>unherit": {
-      "packages": {
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>mdast-util-from-markdown>parse-entities": true
-      }
-    },
-    "stylelint>@stylelint/postcss-markdown>remark>remark-parse>mdast-util-from-markdown>parse-entities": {
-      "packages": {
-        "react-markdown>unist-util-visit": true
       }
     },
     "stylelint>@stylelint/postcss-markdown>remark>remark-stringify": {
       "packages": {
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>ccount": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-decimal": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-whitespace-character": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>markdown-escapes": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>repeat-string": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>state-toggle": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>unherit": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>is-alphanumeric": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>longest-streak": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>markdown-table": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>mdast-util-compact": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>stringify-entities": true,
-        "watchify>xtend": true
-      }
-    },
-    "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>markdown-table": {
-      "packages": {
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>repeat-string": true
+        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>mdast-util-to-markdown": true
       }
     },
     "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>mdast-util-to-markdown": {
       "packages": {
-        "react-markdown>unist-util-visit": true
-      }
-    },
-    "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>stringify-entities": {
-      "packages": {
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>character-entities-legacy": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>is-alphanumerical": true,
-        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities>is-hexadecimal": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-parse>is-decimal": true,
-        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>stringify-entities>character-entities-html4": true
+        "gulp-watch>chokidar>braces>fill-range>repeat-string": true,
+        "react-markdown>remark-parse>mdast-util-from-markdown>mdast-util-to-string": true,
+        "react-markdown>remark-parse>mdast-util-from-markdown>parse-entities": true,
+        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>mdast-util-to-markdown>longest-streak": true,
+        "stylelint>@stylelint/postcss-markdown>remark>remark-stringify>mdast-util-to-markdown>zwitch": true
       }
     },
     "stylelint>@stylelint/postcss-markdown>unist-util-find-all-after": {

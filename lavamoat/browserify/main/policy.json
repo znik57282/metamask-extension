@@ -456,9 +456,6 @@
         "setTimeout": true
       },
       "packages": {
-        "@eth-optimism/contracts>@ethersproject/contracts": true,
-        "@metamask/assets-controllers>@ethersproject/abi": true,
-        "@metamask/assets-controllers>@ethersproject/providers": true,
         "@metamask/assets-controllers>abort-controller": true,
         "@metamask/assets-controllers>multiformats": true,
         "@metamask/base-controller": true,
@@ -475,68 +472,6 @@
         "ethers>@ethersproject/providers": true,
         "single-call-balance-checker-abi": true,
         "uuid": true
-      }
-    },
-    "@metamask/assets-controllers>@ethersproject/abi": {
-      "globals": {
-        "console.log": true
-      },
-      "packages": {
-        "@ethersproject/bignumber": true,
-        "@ethersproject/bignumber>@ethersproject/bytes": true,
-        "@ethersproject/bignumber>@ethersproject/logger": true,
-        "ethers>@ethersproject/hdnode>@ethersproject/strings": true,
-        "ethers>@ethersproject/units>@ethersproject/constants": true,
-        "ethers>@ethersproject/wallet>@ethersproject/address": true,
-        "ethers>@ethersproject/wallet>@ethersproject/hash": true,
-        "ethers>@ethersproject/wallet>@ethersproject/keccak256": true,
-        "ethers>@ethersproject/wallet>@ethersproject/properties": true
-      }
-    },
-    "@metamask/assets-controllers>@ethersproject/providers": {
-      "globals": {
-        "WebSocket": true,
-        "clearInterval": true,
-        "clearTimeout": true,
-        "console.log": true,
-        "console.warn": true,
-        "setInterval": true,
-        "setTimeout": true
-      },
-      "packages": {
-        "@eth-optimism/contracts>@ethersproject/abstract-provider": true,
-        "@eth-optimism/contracts>@ethersproject/abstract-provider>@ethersproject/networks": true,
-        "@eth-optimism/contracts>@ethersproject/abstract-provider>@ethersproject/web": true,
-        "@eth-optimism/contracts>@ethersproject/abstract-signer": true,
-        "@ethersproject/bignumber": true,
-        "@ethersproject/bignumber>@ethersproject/bytes": true,
-        "@ethersproject/bignumber>@ethersproject/logger": true,
-        "@metamask/assets-controllers>@ethersproject/providers>@ethersproject/base64": true,
-        "ethers>@ethersproject/hdnode>@ethersproject/basex": true,
-        "ethers>@ethersproject/hdnode>@ethersproject/strings": true,
-        "ethers>@ethersproject/pbkdf2>@ethersproject/sha2": true,
-        "ethers>@ethersproject/providers>bech32": true,
-        "ethers>@ethersproject/units>@ethersproject/constants": true,
-        "ethers>@ethersproject/wallet>@ethersproject/address": true,
-        "ethers>@ethersproject/wallet>@ethersproject/hash": true,
-        "ethers>@ethersproject/wallet>@ethersproject/properties": true,
-        "ethers>@ethersproject/wallet>@ethersproject/random": true,
-        "ethers>@ethersproject/wallet>@ethersproject/transactions": true
-      }
-    },
-    "@metamask/assets-controllers>@ethersproject/providers>@ethersproject/base64": {
-      "globals": {
-        "atob": true,
-        "btoa": true
-      },
-      "packages": {
-        "@ethersproject/bignumber>@ethersproject/bytes": true
-      }
-    },
-    "@metamask/assets-controllers>@ethersproject/providers>@ethersproject/rlp": {
-      "packages": {
-        "@ethersproject/bignumber>@ethersproject/bytes": true,
-        "@ethersproject/bignumber>@ethersproject/logger": true
       }
     },
     "@metamask/assets-controllers>abort-controller": {
@@ -4552,7 +4487,6 @@
     },
     "react-responsive-carousel": {
       "globals": {
-        "HTMLElement": true,
         "addEventListener": true,
         "clearTimeout": true,
         "console.warn": true,
