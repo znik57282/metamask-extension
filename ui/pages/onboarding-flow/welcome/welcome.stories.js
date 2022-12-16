@@ -3,7 +3,7 @@ import OnboardingWelcome from './welcome';
 
 export default {
   title: 'Pages/OnboardingFlow/Welcome',
-  id: __filename,
+  id: 'ui-pages-onboarding-flow-welcome-welcome',
 };
 
 export const DefaultStory = () => <OnboardingWelcome />;

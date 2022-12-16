@@ -3,7 +3,7 @@ import SrpInput from '.';
 
 export default {
   title: 'Components/App/SrpInput',
-  id: __filename,
+  id: 'ui-components-app-srp-input-srp-input',
   component: SrpInput,
   argTypes: {
     onChange: { action: 'changed' },

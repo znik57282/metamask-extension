@@ -5,7 +5,7 @@ import UnlockPage from './unlock-page.component';
 
 export default {
   title: 'Pages/UnlockPage',
-  id: __filename,
+  id: 'ui-pages-unlock-page-unlock-page',
   component: UnlockPage,
   parameters: {
     docs: {

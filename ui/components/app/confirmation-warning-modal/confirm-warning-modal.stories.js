@@ -3,7 +3,7 @@ import ConfirmationWarningModal from '.';
 
 export default {
   title: 'Components/App/ConfirmationWarningModal',
-  id: __filename,
+  id: 'ui-components-app-confirmation-warning-modal-confirm-warning-modal',
 };
 
 export const DefaultStory = (args) => <ConfirmationWarningModal {...args} />;

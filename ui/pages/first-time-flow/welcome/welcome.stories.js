@@ -3,7 +3,7 @@ import Welcome from './welcome.component';
 
 export default {
   title: 'Pages/FirstTimeFlow/Welcome',
-  id: __filename,
+  id: 'ui-pages-first-time-flow-welcome-welcome',
 };
 
 export const DefaultStory = () => {

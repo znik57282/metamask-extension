@@ -3,7 +3,7 @@ import CurrencyInput from '.';
 
 export default {
   title: 'Components/App/CurrencyInput',
-  id: __filename,
+  id: 'ui-components-app-currency-input-currency-input',
   argTypes: {
     hexValue: {
       control: 'text',

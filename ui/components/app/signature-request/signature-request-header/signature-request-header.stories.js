@@ -3,7 +3,7 @@ import SignatureRequestHeader from '.';
 
 export default {
   title: 'Components/App/SignatureRequest/SignatureRequestHeader',
-  id: __filename,
+  id: 'ui-components-app-signature-request-signature-request-header-signature-request-header',
 };
 
 export const DefaultStory = () => <SignatureRequestHeader />;

@@ -41,7 +41,7 @@ const getMockTransactionGroup = (args) => {
  */
 export default {
   title: 'Components/App/TransactionListItem',
-  id: __filename,
+  id: 'ui-components-app-transaction-list-item-transaction-list-item',
   argTypes: {
     isEarliestNonce: { control: 'boolean' },
     'transactionGroup.hasCancelled': { control: 'boolean' },

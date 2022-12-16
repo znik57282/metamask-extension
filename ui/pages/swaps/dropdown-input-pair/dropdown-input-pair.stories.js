@@ -117,7 +117,7 @@ const tokens = [
 
 export default {
   title: 'Pages/Swaps/DropdownInputPair',
-  id: __filename,
+  id: 'ui-pages-swaps-dropdown-input-pair-dropdown-input-pair',
   component: DropdownInputPair,
   parameters: {
     docs: {

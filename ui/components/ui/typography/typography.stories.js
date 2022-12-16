@@ -20,7 +20,7 @@ const marginSizeKnobOptions = [...sizeKnobOptions, 'auto'];
 
 export default {
   title: 'Components/UI/Typography',
-  id: __filename,
+  id: 'ui-components-ui-typography-typography',
   parameters: {
     docs: {
       page: README,

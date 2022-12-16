@@ -3,7 +3,7 @@ import HideTokenConfirmationModal from '.';
 
 export default {
   title: 'Components/App/Modals/HideTokenConfirmationModal',
-  id: __filename,
+  id: 'ui-components-app-modals-hide-token-confirmation-modal-hide-token-confirmation',
 };
 
 export const DefaultStory = () => <HideTokenConfirmationModal />;

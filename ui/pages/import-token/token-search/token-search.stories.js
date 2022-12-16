@@ -4,7 +4,7 @@ import TokenSearch from './token-search.component';
 
 export default {
   title: 'Pages/ImportToken/TokenSearch',
-  id: __filename,
+  id: 'ui-pages-import-token-token-search-token-search',
   argTypes: {
     error: {
       control: 'text',

@@ -7,7 +7,7 @@ import Button from '.';
 
 export default {
   title: 'Components/UI/Button',
-  id: __filename,
+  id: 'ui-components-ui-button-button',
   component: Button,
   parameters: {
     docs: {

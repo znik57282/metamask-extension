@@ -3,7 +3,7 @@ import ExportPrivateKeyModal from '.';
 
 export default {
   title: 'Components/App/Modals/ExportPrivateKeyModal',
-  id: __filename,
+  id: 'ui-components-app-modals-export-private-key-modal-export-private-key-modal',
 };
 
 export const DefaultStory = () => <ExportPrivateKeyModal />;

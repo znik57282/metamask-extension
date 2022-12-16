@@ -3,7 +3,7 @@ import CreationSuccessful from './creation-successful';
 
 export default {
   title: 'Pages/OnboardingFlow/CreationSuccessful',
-  id: __filename,
+  id: 'ui-pages-onboarding-flow-creation-successful-creation-successful',
 };
 
 export const DefaultStory = () => {

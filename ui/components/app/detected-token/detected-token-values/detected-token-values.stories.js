@@ -4,7 +4,7 @@ import DetectedTokenValues from './detected-token-values';
 
 export default {
   title: 'Components/App/DetectedToken/DetectedTokenValues',
-  id: __filename,
+  id: 'ui-components-app-detected-token-detected-token-values-detected-token-values',
   argTypes: {
     token: { control: 'object' },
     handleTokenSelection: { control: 'func' },

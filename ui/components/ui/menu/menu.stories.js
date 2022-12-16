@@ -4,7 +4,7 @@ import { Menu, MenuItem } from '.';
 
 export default {
   title: 'Components/UI/Menu',
-  id: __filename,
+  id: 'ui-components-ui-menu-menu',
 };
 
 export const DefaultStory = () => {

@@ -3,7 +3,7 @@ import { SnapDelineator } from '.';
 
 export default {
   title: 'Components/App/SnapDelineator',
-  id: __filename,
+  id: 'ui-components-app-flask-snap-delineator-snap-delineator',
 };
 
 export const DefaultStory = () => (

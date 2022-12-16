@@ -3,7 +3,7 @@ import SignatureRequestSIWEIcon from '.';
 
 export default {
   title: 'Components/App/SignatureRequestSIWE/SignatureRequestSIWEIcon',
-  id: __filename,
+  id: 'ui-components-app-signature-request-siwe-signature-request-siwe-icon-signature-request-siwe-icon',
 };
 
 export const DefaultStory = (args) => <SignatureRequestSIWEIcon {...args} />;

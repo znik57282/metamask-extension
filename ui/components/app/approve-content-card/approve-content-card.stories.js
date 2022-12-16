@@ -3,7 +3,7 @@ import ApproveContentCard from './approve-content-card';
 
 export default {
   title: 'Components/App/ApproveContentCard',
-  id: __filename,
+  id: 'ui-components-app-approve-content-card-approve-content-card',
   argTypes: {
     showHeader: {
       control: 'boolean',

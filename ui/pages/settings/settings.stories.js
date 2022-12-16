@@ -28,7 +28,7 @@ export default {
       </MemoryRouter>
     ),
   ],
-  id: __filename,
+  id: 'ui-pages-settings-settings',
   title: 'Pages/SettingsPage',
 };
 

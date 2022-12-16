@@ -13,7 +13,7 @@ import SendHeader from './send-header.component';
 
 export default {
   title: 'Pages/Send/SendHeader',
-  id: __filename,
+  id: 'ui-pages-send-send-header-send-header',
   argTypes: {
     asset: {
       control: {

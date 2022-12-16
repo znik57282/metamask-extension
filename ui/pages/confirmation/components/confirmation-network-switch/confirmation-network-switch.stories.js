@@ -3,7 +3,7 @@ import ConfirmationNetworkSwitch from '.';
 
 export default {
   title: 'Pages/Confirmation/Components/ConfirmationNetworkSwitch',
-  id: __filename,
+  id: 'ui-pages-confirmation-components-confirmation-network-switch-confirmation-network-switch',
   argTypes: {
     newNetwork: {
       controls: 'object',

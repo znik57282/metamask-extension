@@ -33,7 +33,7 @@ const marginSizeKnobOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/AvatarBase',
-  id: __filename,
+  id: 'ui-components-component-library-avatar-base-avatar-base',
   component: AvatarBase,
   parameters: {
     docs: {

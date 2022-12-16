@@ -5,7 +5,7 @@ import ConfirmTokenTransactionBase from './confirm-token-transaction-base';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Pages/ConfirmTokenTransactionBase',
-  id: __filename,
+  id: 'ui-pages-confirm-token-transaction-base-confirm-token-transaction-base',
 };
 
 const state = store.getState();

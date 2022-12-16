@@ -5,7 +5,7 @@ import ConfirmDeployContract from '.';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Pages/ConfirmDeployContract',
-  id: __filename,
+  id: 'ui-pages-confirm-deploy-contract-confirm-deploy-contract',
   component: ConfirmDeployContract,
   argTypes: {
     txData: {

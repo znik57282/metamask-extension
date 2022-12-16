@@ -6,7 +6,7 @@ import SnapSettingsCard from '.';
 
 export default {
   title: 'Components/App/Flask/SnapSettingsCard',
-  id: __filename,
+  id: 'ui-components-app-flask-snap-settings-card-snap-settings-card',
   component: SnapSettingsCard,
   parameters: {
     docs: {

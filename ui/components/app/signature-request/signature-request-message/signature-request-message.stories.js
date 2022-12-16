@@ -3,7 +3,7 @@ import SignatureRequestMessage from './signature-request-message';
 
 export default {
   title: 'Components/App/SignatureRequestMessage',
-  id: __filename,
+  id: 'ui-components-app-signature-request-signature-request-message-signature-request-message',
   component: SignatureRequestMessage,
   argTypes: {
     data: { control: 'object' },

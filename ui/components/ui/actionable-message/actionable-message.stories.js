@@ -13,7 +13,7 @@ import ActionableMessage from '.';
 
 export default {
   title: 'Components/UI/ActionableMessage',
-  id: __filename,
+  id: 'ui-components-ui-actionable-message-actionable-message',
   component: ActionableMessage,
   parameters: { docs: { page: README } },
   argTypes: {

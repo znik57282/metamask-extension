@@ -10,7 +10,7 @@ const store = configureStore(testData);
 
 export default {
   title: 'Components/App/SnapUIRenderer',
-  id: __filename,
+  id: 'ui-components-app-flask-snap-ui-renderer-snap-ui-renderer',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
 };
 

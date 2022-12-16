@@ -11,7 +11,7 @@ const subjectMetadata = {
 
 export default {
   title: 'Components/App/SignatureRequestSIWE/SignatureRequestSIWEHeader',
-  id: __filename,
+  id: 'ui-components-app-signature-request-siwe-signature-request-siwe-header-signature-request-siwe-header',
   argTypes: {
     fromAccount: {
       table: {

@@ -4,7 +4,7 @@ import MainQuoteSummary from './main-quote-summary';
 
 export default {
   title: 'Pages/Swaps/MainQuoteSummary',
-  id: __filename,
+  id: 'ui-pages-swaps-main-quote-summary-main-quote-summary',
   component: MainQuoteSummary,
   parameters: {
     docs: {

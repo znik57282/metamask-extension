@@ -4,7 +4,7 @@ import NetworksList from './networks-list';
 
 export default {
   title: 'Pages/Settings/NetworksTab/NetworksList',
-  id: __filename,
+  id: 'ui-pages-settings-networks-tab-networks-list-network-list',
   argTypes: {
     networkDefaultedToProvider: {
       control: 'boolean',

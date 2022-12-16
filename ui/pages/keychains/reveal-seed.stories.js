@@ -3,7 +3,7 @@ import RevealSeedPage from './reveal-seed';
 
 export default {
   title: 'Pages/Keychains/RevealSeedPage',
-  id: __filename,
+  id: 'ui-pages-keychains-reveal-seed',
   argTypes: {
     requestRevealSeedWords: {
       action: 'requestRevealSeedWords',

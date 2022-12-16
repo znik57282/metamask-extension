@@ -3,7 +3,7 @@ import EndOfFlowScreen from './end-of-flow.component';
 
 export default {
   title: 'Pages/FirstTimeFlow/EndOfFlow',
-  id: __filename,
+  id: 'ui-pages-first-time-flow-end-of-flow-end-of-flow',
 };
 
 export const DefaultStory = () => {

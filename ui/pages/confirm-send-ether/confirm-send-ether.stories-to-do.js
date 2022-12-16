@@ -4,7 +4,7 @@ import ConfirmSendEther from '.';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Pages/ConfirmSendEther',
-  id: __filename,
+  id: 'ui-pages-confirm-send-ether-confirm-send-ether',
   component: ConfirmSendEther,
   argTypes: {
     editTransaction: {

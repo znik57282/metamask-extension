@@ -22,7 +22,7 @@ const buttonStyle = {
 
 export default {
   title: 'Components/UI/Mascot',
-  id: __filename,
+  id: 'ui-components-ui-mascot-mascot',
 };
 
 export const DefaultStory = () => {

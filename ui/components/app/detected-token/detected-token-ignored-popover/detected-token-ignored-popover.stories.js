@@ -4,7 +4,7 @@ import DetectedTokenIgnoredPopover from './detected-token-ignored-popover';
 
 export default {
   title: 'Components/App/DetectedToken/DetectedTokenIgnoredPopover',
-  id: __filename,
+  id: 'ui-components-app-detected-token-detected-token-ignored-popover-detected-token-ignored-popover',
   argTypes: {
     onCancelIgnore: {
       control: 'func',

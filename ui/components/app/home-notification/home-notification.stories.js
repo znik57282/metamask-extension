@@ -4,7 +4,7 @@ import HomeNotification from './home-notification.component';
 
 export default {
   title: 'Components/App/HomeNotification',
-  id: __filename,
+  id: 'ui-components-app-home-notification-home-notification',
   component: HomeNotification,
   argTypes: {
     acceptText: {

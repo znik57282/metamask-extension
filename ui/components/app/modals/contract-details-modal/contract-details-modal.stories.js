@@ -3,7 +3,7 @@ import ContractDetailsModal from './contract-details-modal';
 
 export default {
   title: 'Components/App/Modals/ContractDetailsModal',
-  id: __filename,
+  id: 'ui-components-app-modals-contract-details-modal-contract-details-modal',
   argTypes: {
     onClose: {
       action: 'onClose',

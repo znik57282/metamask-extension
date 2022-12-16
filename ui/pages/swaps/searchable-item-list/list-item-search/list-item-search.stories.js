@@ -4,7 +4,7 @@ import ListItemSearch from '.';
 
 export default {
   title: 'Pages/Swaps/SearchableItemList/ListItemSearch',
-  id: __filename,
+  id: 'ui-pages-swaps-searchable-item-list-list-item-search-list-item-search',
   argTypes: {
     onSearch: {
       action: 'onSearch',

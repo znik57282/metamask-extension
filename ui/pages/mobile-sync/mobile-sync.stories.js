@@ -4,7 +4,7 @@ import MobileSyncPage from './mobile-sync.component';
 
 export default {
   title: 'Pages/MobileSyncPage',
-  id: __filename,
+  id: 'ui-pages-mobile-sync-mobile-sync',
 };
 
 export const DefaultStory = () => {

@@ -4,7 +4,7 @@ import ConfirmSendToken from './confirm-send-token.component';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: 'Pages/ConfirmSendToken',
-  id: __filename,
+  id: 'ui-pages-confirm-send-token-confirm-send-token',
 };
 
 const PageSet = ({ children }) => {

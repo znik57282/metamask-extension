@@ -3,7 +3,7 @@ import SnapsAuthorshipPill from '.';
 
 export default {
   title: 'Components/App/Flask/SnapsAuthorshipPill',
-  id: __filename,
+  id: 'ui-components-app-flask-snaps-authorship-pill-snaps-authorship-pill',
   component: SnapsAuthorshipPill,
   argTypes: {
     snapId: {

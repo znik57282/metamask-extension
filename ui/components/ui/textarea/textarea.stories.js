@@ -14,7 +14,7 @@ import Textarea from '.';
 
 export default {
   title: 'Components/UI/Textarea',
-  id: __filename,
+  id: 'ui-components-ui-textarea-textarea',
   component: Textarea,
   parameters: {
     docs: {

@@ -10,7 +10,7 @@ import { PickerNetwork } from './picker-network';
 
 export default {
   title: 'Components/ComponentLibrary/PickerNetwork',
-  id: __filename,
+  id: 'ui-components-component-library-picker-network-picker-network',
   component: PickerNetwork,
   parameters: {
     docs: {

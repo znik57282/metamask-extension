@@ -16,7 +16,7 @@ const checkboxOptions = {
 
 export default {
   title: 'Components/UI/Check Box',
-  id: __filename,
+  id: 'ui-components-ui-check-box-check-box',
   component: CheckBox,
   parameters: {
     docs: {

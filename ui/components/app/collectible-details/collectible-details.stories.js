@@ -12,7 +12,7 @@ const collectible = {
 
 export default {
   title: 'Components/App/CollectiblesDetail',
-  id: __filename,
+  id: 'ui-components-app-collectible-details-collectible-details',
   argTypes: {
     collectible: {
       control: 'object',

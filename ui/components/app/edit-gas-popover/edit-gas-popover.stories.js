@@ -15,7 +15,7 @@ const store = configureStore(testData);
 export default {
   title: 'Components/App/EditGasPopover',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
-  id: __filename,
+  id: 'ui-components-app-edit-gas-popover-edit-gas-popover',
   argTypes: {
     editGasDisplayProps: {
       control: 'object',

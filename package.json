@@ -80,7 +80,7 @@
     "ts-migration:dashboard:watch": "ts-node development/ts-migration-dashboard/scripts/build.ts --watch",
     "ts-migration:dashboard:build": "ts-node development/ts-migration-dashboard/scripts/build.ts",
     "ts-migration:dashboard:deploy": "gh-pages --dist development/ts-migration-dashboard/build --remote ts-migration-dashboard",
-    "test-storybook": "test-storybook -c .storybook"
+    "test-storybook": "test-storybook -c .storybook --index-json"
   },
   "resolutions": {
     "analytics-node/axios": "^0.21.2",

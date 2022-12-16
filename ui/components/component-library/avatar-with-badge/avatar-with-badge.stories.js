@@ -14,7 +14,7 @@ import { AvatarWithBadge } from './avatar-with-badge';
 
 export default {
   title: 'Components/ComponentLibrary/AvatarWithBadge',
-  id: __filename,
+  id: 'ui-components-component-library-avatar-with-badge-avatar-with-badge',
   component: AvatarWithBadge,
   parameters: {
     docs: {

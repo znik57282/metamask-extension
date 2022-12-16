@@ -3,7 +3,7 @@ import CollectibleDefaultImage from '.';
 
 export default {
   title: 'Components/App/CollectibleDefaultImage',
-  id: __filename,
+  id: 'ui-components-app-collectible-default-image-collectible-default-image',
   argTypes: {
     name: {
       control: 'text',

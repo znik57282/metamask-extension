@@ -3,7 +3,7 @@ import ConfirmRemoveAccount from '.';
 
 export default {
   title: 'Components/App/Modals/ConfirmRemoveAccount',
-  id: __filename,
+  id: 'ui-components-app-modals-confirm-remove-account-confirm-remove-account',
   component: ConfirmRemoveAccount,
   argTypes: {
     identity: {

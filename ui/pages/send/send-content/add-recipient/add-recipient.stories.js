@@ -14,7 +14,7 @@ const recipient = metamask.accountArray[0];
 
 export default {
   title: 'Pages/Send/SendContent/AddRecipient',
-  id: __filename,
+  id: 'ui-pages-send-send-content-add-recipient-add-recipient',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
   argTypes: {
     userInput: {

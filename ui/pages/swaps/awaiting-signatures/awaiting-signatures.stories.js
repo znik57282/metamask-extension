@@ -3,7 +3,7 @@ import AwaitingSignatures from './awaiting-signatures';
 
 export default {
   title: 'Pages/Swaps/AwaitingSignatures',
-  id: __filename,
+  id: 'ui-pages-swaps-awaiting-signatures-awaiting-signatures',
 };
 
 export const DefaultStory = () => {

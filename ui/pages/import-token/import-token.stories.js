@@ -22,7 +22,7 @@ const {
 
 export default {
   title: 'Pages/ImportToken',
-  id: __filename,
+  id: 'ui-pages-import-token-import-token',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
   component: ImportToken,
   parameters: {

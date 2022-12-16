@@ -8,7 +8,7 @@ import ConfirmAddToken from '.';
 
 export default {
   title: 'Pages/ConfirmImportToken',
-  id: __filename,
+  id: 'ui-pages-confirm-import-token-confirm-import-token',
 
   argTypes: {
     pendingTokens: {

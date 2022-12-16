@@ -14,7 +14,7 @@ const store = configureStore(testData);
 
 export default {
   title: 'Pages/Send/SendContent/SendGasRow',
-  id: __filename,
+  id: 'ui-pages-send-send-content-send-gas-row-send-gas-row',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
   parameters: {
     docs: {

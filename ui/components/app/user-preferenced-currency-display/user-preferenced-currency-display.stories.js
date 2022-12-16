@@ -5,7 +5,7 @@ import UserPreferencedCurrencyDisplay from '.';
 
 export default {
   title: 'Components/App/UserPreferencedCurrencyDisplay',
-  id: __filename,
+  id: 'ui-components-app-user-preferenced-currency-display-user-preferenced-currency-display',
   argTypes: {
     className: {
       control: 'text',

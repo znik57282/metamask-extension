@@ -12,7 +12,7 @@ import README from './README.mdx';
 
 export default {
   title: 'Components/ComponentLibrary/AvatarAccount',
-  id: __filename,
+  id: 'ui-components-component-library-avatar-account-avatar-account',
   component: AvatarAccount,
   parameters: {
     docs: {

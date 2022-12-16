@@ -4,7 +4,7 @@ import HexToDecimal from './hex-to-decimal.component';
 
 export default {
   title: 'Components/UI/HexToDecimal',
-  id: __filename,
+  id: 'ui-components-ui-hex-to-decimal-hex-to-decimal',
   component: HexToDecimal,
   parameters: {
     docs: {

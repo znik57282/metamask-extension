@@ -114,7 +114,7 @@ const tokens = [
 
 export default {
   title: 'Pages/Swaps/DropdownSearchList',
-  id: __filename,
+  id: 'ui-pages-swaps-dropdown-search-list-dropdown-search-list',
 };
 
 const tokensToSearch = tokens.map((token) => ({

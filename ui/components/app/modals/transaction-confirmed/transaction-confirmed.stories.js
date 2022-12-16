@@ -3,7 +3,7 @@ import TransactionConfirmed from '.';
 
 export default {
   title: 'Components/App/Modals/TransactionConfirmed',
-  id: __filename,
+  id: 'ui-components-app-modals-transaction-confirmed-transaction-confirmed',
 };
 
 export const DefaultStory = () => <TransactionConfirmed />;

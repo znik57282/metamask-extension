@@ -13,7 +13,7 @@ const { keysWithoutSubstitution } = groupBy(Object.keys(en), (key) => {
 
 export default {
   title: 'Components/App/MetamaskTranslation',
-  id: __filename,
+  id: 'ui-components-app-metamask-translation-metamask-translation',
   component: MetaMaskTranslation,
   parameters: {
     docs: {

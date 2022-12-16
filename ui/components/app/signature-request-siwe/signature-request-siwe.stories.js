@@ -8,7 +8,7 @@ const otherIdentity = Object.values(identities)[0];
 
 export default {
   title: 'Components/App/SignatureRequestSIWE',
-  id: __filename,
+  id: 'ui-components-app-signature-request-siwe-signature-request-siwe',
   component: SignatureRequestSIWE,
   parameters: {
     docs: {

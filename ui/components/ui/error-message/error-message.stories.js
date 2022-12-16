@@ -4,7 +4,7 @@ import ErrorMessage from '.';
 
 export default {
   title: 'Components/UI/ErrorMessage',
-  id: __filename,
+  id: 'ui-components-ui-error-message-error-message',
   component: ErrorMessage,
   parameters: {
     docs: {

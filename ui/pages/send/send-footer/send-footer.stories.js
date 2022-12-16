@@ -4,7 +4,7 @@ import SendFooter from './send-footer.component';
 
 export default {
   title: 'Pages/Send/SendFooter',
-  id: __filename,
+  id: 'ui-pages-send-send-footer-send-footer',
   argTypes: {
     clearSend: { action: 'clearSend' },
     sign: { action: 'sign' },

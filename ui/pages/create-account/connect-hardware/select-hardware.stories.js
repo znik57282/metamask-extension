@@ -5,7 +5,7 @@ import SelectHardware from './select-hardware';
 
 export default {
   title: 'Pages/CreateAccount/ConnectHardware/SelectHardware',
-  id: __filename,
+  id: 'ui-pages-create-account-connect-hardware-select-hardware',
 };
 
 export const DefaultStory = () => {

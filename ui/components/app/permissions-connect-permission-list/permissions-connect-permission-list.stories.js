@@ -4,7 +4,7 @@ import PermissionsConnectList from '.';
 
 export default {
   title: 'Components/App/PermissionsConnectList',
-  id: __filename,
+  id: 'ui-components-app-permissions-connect-permission-list-permissions-connect-permission-list',
   component: PermissionsConnectList,
   argTypes: {
     permissions: {

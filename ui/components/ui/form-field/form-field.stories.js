@@ -10,7 +10,7 @@ import FormField from '.';
 
 export default {
   title: 'Components/UI/FormField',
-  id: __filename,
+  id: 'ui-components-ui-form-field-form-field',
   component: FormField,
   parameters: {
     docs: {

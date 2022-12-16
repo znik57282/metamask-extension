@@ -3,7 +3,7 @@ import OnboardingMetametrics from './metametrics';
 
 export default {
   title: 'Pages/OnboardingFlow/OnboardingMetametrics',
-  id: __filename,
+  id: 'ui-pages-onboarding-flow-metametrics-metametrics',
 };
 
 export const DefaultStory = () => <OnboardingMetametrics />;

@@ -32,7 +32,7 @@ const marginSizeControlOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/TextFieldSearch',
-  id: __filename,
+  id: 'ui-components-component-library-text-field-search-text-field-search',
   component: TextFieldSearch,
   parameters: {
     docs: {

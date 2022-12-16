@@ -4,7 +4,7 @@ import ExperimentalArea from '.';
 
 export default {
   title: 'Components/App/Flask/ExperimentalArea',
-  id: __filename,
+  id: 'ui-components-app-flask-experimental-area-experimental-area',
   component: ExperimentalArea,
 };
 

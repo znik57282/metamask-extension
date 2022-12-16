@@ -33,7 +33,7 @@ const marginSizeControlOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/Button',
-  id: __filename,
+  id: 'ui-components-component-library-button-button',
   component: Button,
   parameters: {
     docs: {

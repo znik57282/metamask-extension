@@ -48,7 +48,7 @@ const marginSizeControlOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/Icon',
-  id: __filename,
+  id: 'ui-components-component-library-icon-icon',
   component: Icon,
   parameters: {
     docs: {

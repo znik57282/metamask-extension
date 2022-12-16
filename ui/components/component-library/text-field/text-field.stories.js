@@ -32,7 +32,7 @@ const marginSizeControlOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/TextField',
-  id: __filename,
+  id: 'ui-components-component-library-text-field-text-field',
   component: TextField,
   parameters: {
     docs: {

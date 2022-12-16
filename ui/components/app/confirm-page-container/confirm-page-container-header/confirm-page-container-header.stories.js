@@ -3,7 +3,7 @@ import ConfirmPageContainerHeader from '.';
 
 export default {
   title: 'Components/App/ConfirmPageContainer/ConfirmPageContainerHeader',
-  id: __filename,
+  id: 'ui-components-app-confirm-page-container-confirm-page-container-header-confirm-page-container-header',
   argTypes: {
     accountAddress: {
       control: 'text',

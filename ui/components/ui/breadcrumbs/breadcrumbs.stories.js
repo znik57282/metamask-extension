@@ -4,7 +4,7 @@ import Breadcrumbs from './breadcrumbs.component';
 
 export default {
   title: 'Components/UI/Breadcrumbs ',
-  id: __filename,
+  id: 'ui-components-ui-breadcrumbs-breadcrumbs',
   component: Breadcrumbs,
   parameters: {
     docs: {

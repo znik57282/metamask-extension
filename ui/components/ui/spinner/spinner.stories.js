@@ -3,7 +3,7 @@ import Spinner from '.';
 
 export default {
   title: 'Components/UI/Spinner',
-  id: __filename,
+  id: 'ui-components-ui-spinner-spinner',
   argTypes: {
     className: {
       control: 'text',

@@ -8,7 +8,7 @@ const containerStyle = {
 
 export default {
   title: 'Pages/Swaps/FeeCard',
-  id: __filename,
+  id: 'ui-pages-swaps-fee-card-fee-card',
   component: FeeCard,
   argTypes: {
     primaryFee: {

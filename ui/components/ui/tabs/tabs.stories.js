@@ -5,7 +5,7 @@ import Tabs from './tabs.component';
 
 export default {
   title: 'Components/UI/Tabs',
-  id: __filename,
+  id: 'ui-components-ui-tabs-tabs',
   argTypes: {
     tabs: {
       control: 'object',

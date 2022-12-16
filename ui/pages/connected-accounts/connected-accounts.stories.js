@@ -4,7 +4,7 @@ import ConnectedAccounts from './connected-accounts.component';
 
 export default {
   title: 'Pages/ConnectedAccounts',
-  id: __filename,
+  id: 'ui-pages-connected-accounts-connected-accounts',
 };
 
 const account = [

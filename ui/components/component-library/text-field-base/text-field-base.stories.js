@@ -50,7 +50,7 @@ const marginSizeControlOptions = [
 
 export default {
   title: 'Components/ComponentLibrary/TextFieldBase',
-  id: __filename,
+  id: 'ui-components-component-library-text-field-base-text-field-base',
   component: TextFieldBase,
   parameters: {
     docs: {

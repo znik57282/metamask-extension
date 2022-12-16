@@ -8,7 +8,7 @@ import TransactionDetailItem from '.';
 
 export default {
   title: 'Components/App/TransactionDetailItem',
-  id: __filename,
+  id: 'ui-components-app-transaction-detail-item-transaction-detail-item',
   component: TransactionDetailItem,
   parameters: {
     docs: {

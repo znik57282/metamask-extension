@@ -58,7 +58,7 @@ const validColors = [
 
 export default {
   title: 'Components/UI/Icon',
-  id: __filename,
+  id: 'ui-components-ui-icon-icon',
   parameters: {
     docs: {
       page: README,

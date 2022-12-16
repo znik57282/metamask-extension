@@ -5,7 +5,7 @@ import SiteOrigin from '.';
 
 export default {
   title: 'Components/UI/SiteOrigin',
-  id: __filename,
+  id: 'ui-components-ui-site-origin-site-origin',
   component: SiteOrigin,
   argTypes: {
     siteOrigin: {

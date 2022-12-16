@@ -3,7 +3,7 @@ import PageContainer from '.';
 
 export default {
   title: 'Components/UI/PageContainer',
-  id: __filename,
+  id: 'ui-components-ui-page-container-page-container',
   argTypes: {
     backButtonString: {
       control: 'text',

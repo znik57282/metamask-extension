@@ -12,7 +12,7 @@ const store = configureStore({
 export default {
   title: 'Components/App/BetaHeader',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
-  id: __filename,
+  id: 'ui-components-app-beta-header-beta-header',
 };
 
 export const DefaultStory = () => (

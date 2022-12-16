@@ -4,7 +4,7 @@ import TextField from '.';
 
 export default {
   title: 'Components/UI/TextField',
-  id: __filename,
+  id: 'ui-components-ui-text-field-text-field',
   component: TextField,
   parameters: {
     docs: {

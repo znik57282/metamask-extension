@@ -4,7 +4,7 @@ import NewAccountCreateForm from './new-account.component';
 
 export default {
   title: 'Pages/CreateAccount/NewAccount',
-  id: __filename,
+  id: 'ui-pages-create-account-new-account',
 };
 
 export const DefaultStory = () => {

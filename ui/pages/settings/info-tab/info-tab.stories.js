@@ -3,7 +3,7 @@ import InfoTab from '.';
 
 export default {
   title: 'Pages/Settings/InfoTab',
-  id: __filename,
+  id: 'ui-pages-settings-info-tab-info-tab',
 };
 
 export const DefaultStory = () => <InfoTab />;

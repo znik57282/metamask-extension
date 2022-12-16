@@ -11,7 +11,7 @@ const store = configureStore(testData);
 
 export default {
   title: 'Pages/Send/SendContent/SendAssetRow',
-  id: __filename,
+  id: 'ui-pages-send-send-content-send-asset-row-send-asset-row',
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
 };
 

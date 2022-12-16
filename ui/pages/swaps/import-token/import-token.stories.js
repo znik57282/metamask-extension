@@ -4,7 +4,7 @@ import ImportToken from './import-token';
 
 export default {
   title: 'Pages/Swaps/ImportToken',
-  id: __filename,
+  id: 'ui-pages-swaps-import-token-import-token',
 };
 
 export const DefaultStory = () => {

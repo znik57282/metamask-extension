@@ -3,7 +3,7 @@ import Disclosure from '.';
 
 export default {
   title: 'Components/UI/Disclosure', // title should follow the folder structure location of the component. Don't use spaces.
-  id: __filename,
+  id: 'ui-components-ui-disclosure-disclosure',
   argTypes: {
     children: {
       control: 'text',

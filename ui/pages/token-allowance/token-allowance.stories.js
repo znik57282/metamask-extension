@@ -3,7 +3,7 @@ import TokenAllowance from './token-allowance';
 
 export default {
   title: 'Pages/TokenAllowance',
-  id: __filename,
+  id: 'ui-pages-token-allowance-token-allowance',
   argTypes: {
     origin: {
       control: 'text',

@@ -6,7 +6,7 @@ import DetectedTokenAggregators from './detected-token-aggregators';
 
 export default {
   title: 'Components/App/DetectedToken/DetectedTokenAggregators',
-  id: __filename,
+  id: 'ui-components-app-detected-token-detected-token-aggregators-detected-token-aggregators',
   argTypes: {
     aggregators: { control: 'array' },
   },

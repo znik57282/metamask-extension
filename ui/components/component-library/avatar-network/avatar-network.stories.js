@@ -17,7 +17,7 @@ import { AVATAR_NETWORK_SIZES } from './avatar-network.constants';
 
 export default {
   title: 'Components/ComponentLibrary/AvatarNetwork',
-  id: __filename,
+  id: 'ui-components-component-library-avatar-network-avatar-network',
   component: AvatarNetwork,
   parameters: {
     docs: {

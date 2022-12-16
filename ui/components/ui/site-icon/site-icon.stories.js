@@ -5,7 +5,7 @@ import SiteIcon from '.';
 
 export default {
   title: 'Components/UI/SiteIcon',
-  id: __filename,
+  id: 'ui-components-ui-site-icon-site-icon',
   component: SiteIcon,
   parameters: {
     docs: {

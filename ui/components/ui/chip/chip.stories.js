@@ -17,7 +17,7 @@ import Chip from '.';
 
 export default {
   title: 'Components/UI/Chip',
-  id: __filename,
+  id: 'ui-components-ui-chip-chip',
   component: Chip,
   parameters: {
     docs: {

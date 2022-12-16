@@ -3,7 +3,7 @@ import SelectAction from './select-action.component';
 
 export default {
   title: 'Pages/FirstTimeFlow/SelectAction',
-  id: __filename,
+  id: 'ui-pages-first-time-flow-select-action-select-action',
 };
 
 export const DefaultStory = () => {

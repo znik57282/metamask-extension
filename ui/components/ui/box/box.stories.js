@@ -41,7 +41,7 @@ const marginSizeControlOptions = [...sizeControlOptions, 'auto'];
 
 export default {
   title: 'Components/UI/Box',
-  id: __filename,
+  id: 'ui-components-ui-box-box',
   component: Box,
   parameters: {
     docs: {

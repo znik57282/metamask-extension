@@ -4,7 +4,7 @@ import InfoBox from '.';
 
 export default {
   title: 'Components/App/InfoBox',
-  id: __filename,
+  id: 'ui-components-app-info-box-info-box',
   component: InfoBox,
   argTypes: {
     title: 'string',

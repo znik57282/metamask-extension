@@ -4,7 +4,7 @@ import Dialog from '.';
 
 export default {
   title: 'Components/UI/Dialog',
-  id: __filename,
+  id: 'ui-components-ui-dialog-dialog',
   component: Dialog,
   parameters: {
     docs: {

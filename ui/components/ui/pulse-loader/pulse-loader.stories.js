@@ -4,7 +4,7 @@ import PulseLoader from '.';
 
 export default {
   title: 'Components/UI/PulseLoader',
-  id: __filename,
+  id: 'ui-components-ui-pulse-loader-pulse-loader',
   component: PulseLoader,
   parameters: {
     docs: {

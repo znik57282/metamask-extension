@@ -17,7 +17,7 @@ import README from './README.mdx';
 
 export default {
   title: 'Components/ComponentLibrary/Label',
-  id: __filename,
+  id: 'ui-components-component-library-label-label',
   component: Label,
   parameters: {
     docs: {

@@ -10,7 +10,7 @@ import ListItem from './list-item.component';
 
 export default {
   title: 'Components/UI/ListItem',
-  id: __filename,
+  id: 'ui-components-ui-list-item-list-item',
   argTypes: {
     title: {
       control: 'text',

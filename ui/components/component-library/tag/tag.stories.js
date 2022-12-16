@@ -4,7 +4,7 @@ import { Tag } from './tag';
 
 export default {
   title: 'Components/ComponentLibrary/Tag',
-  id: __filename,
+  id: 'ui-components-component-library-tag-tag',
   component: Tag,
   parameters: {
     docs: {

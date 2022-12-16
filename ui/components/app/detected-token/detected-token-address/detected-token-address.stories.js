@@ -4,7 +4,7 @@ import DetectedTokenAddress from './detected-token-address';
 
 export default {
   title: 'Components/App/DetectedToken/DetectedTokenAddress',
-  id: __filename,
+  id: 'ui-components-app-detected-token-detected-token-address-detected-token-address',
   argTypes: {
     tokenAddress: { control: 'text' },
   },

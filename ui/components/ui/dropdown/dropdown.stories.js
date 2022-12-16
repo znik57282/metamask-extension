@@ -19,7 +19,7 @@ const namedOptionsWithVeryLongNames = unnamedOptions.map((option, index) => {
 
 export default {
   title: 'Components/UI/Dropdown',
-  id: __filename,
+  id: 'ui-components-ui-dropdown-dropdown',
   component: Dropdown,
   parameters: {
     docs: {

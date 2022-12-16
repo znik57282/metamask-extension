@@ -4,7 +4,7 @@ import InfoTooltip from './info-tooltip';
 
 export default {
   title: 'Components/UI/InfoTooltip',
-  id: __filename,
+  id: 'ui-components-ui-info-tooltip-info-tooltip',
   component: InfoTooltip,
   parameters: {
     docs: {
