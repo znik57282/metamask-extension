@@ -4102,9 +4102,6 @@
   "thingsToKeep": {
     "message": "Things to keep in mind:"
   },
-  "thingsToKnow": {
-    "message": "Things to know:"
-  },
   "thisWillCreate": {
     "message": "This will create a new wallet and Secret Recovery Phrase"
   },
